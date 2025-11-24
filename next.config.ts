@@ -5,12 +5,9 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
-  // Включаем ESLint проверку при сборке
-  eslint: {
-    ignoreDuringBuilds: false,
-  },
-  // Настройки для деплоя
-  output: 'standalone', // Оптимизация для production
+  // ESLint настройки теперь в отдельном файле eslint.config.mjs
+  // Настройки для production
+  output: 'standalone',
 }
 
 export default nextConfig
